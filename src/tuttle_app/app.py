@@ -5,11 +5,17 @@ import toga
 from toga.style import Pack
 from toga.style.pack import COLUMN, ROW
 
+import pandas
+import numpy
+import sqlmodel
+import pyicloud
+
 
 class Tuttle(toga.App):
 
     def dummy_command(self, widget):
         """A dummy command for demo purposes"""
+        df = pandas.DataFrame()
         print("Command triggered")
 
     def startup(self):

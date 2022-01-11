@@ -12,7 +12,11 @@ formal_name = "Tuttle"
 description = "Painless business planning for freelancers"
 icon = "src/tuttle_app/resources/tuttle_app"
 sources = ['src/tuttle_app']
-requires = []
+requires = [
+    'pandas',
+    'sqlmodel',
+    'pyicloud'
+]
 
 
 [tool.briefcase.app.tuttle_app.macOS]
