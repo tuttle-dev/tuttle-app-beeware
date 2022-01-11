@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "Tuttle"
+bundle = "io.github.tuttle-dev.tuttle-app"
+version = "0.0.1"
+url = "https://tuttle-app.tuttle-dev.github.io/tuttle_app"
+license = "GNU General Public License v3 (GPLv3)"
+author = 'Christian Staudt'
+author_email = "mail@clstaudt.me"
+
+[tool.briefcase.app.tuttle_app]
+formal_name = "Tuttle"
+description = "Painless business planning for freelancers"
+icon = "src/tuttle_app/resources/tuttle_app"
+sources = ['src/tuttle_app']
+requires = []
+
+
+[tool.briefcase.app.tuttle_app.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.tuttle_app.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.tuttle_app.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.tuttle_app.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.tuttle_app.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]

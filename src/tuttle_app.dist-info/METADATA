@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.5
+Name: tuttle_app
+Formal-Name: Tuttle
+App-ID: io.github.tuttle-dev.tuttle-app.tuttle_app
+Version: 0.0.1
+Home-page: https://tuttle-app.tuttle-dev.github.io/tuttle_app
+Author: Christian Staudt
+Author-email: mail@clstaudt.me
+Summary: Painless business planning for freelancers
